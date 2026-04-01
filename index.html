@@ -8,45 +8,67 @@
 </head>
 <body>
    <div class="grid-container">
-    <header></header>
+    <header>
+        <div class="user-controls">
+            <form>
+                <label for="search"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" fill="#1F1F1F"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/></svg></label>
+                <input type="text" id="search">
+            </form>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1F1F1F"><path d="M96-528q0-88 35.5-162T230-818l51 50q-52 43-82.5 105.5T168-528H96Zm696 0q0-73-30.5-135.5T678-769l52-51q62 53 98 128.5T864-528h-72ZM192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm0 396q-30 0-51-21t-21-51h144q0 30-21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z"/></svg>
+            <img class="avatar-small" src="avatars/v826-te-16.png" alt="Adrian Predica" height="auto" width="48px">
+            <p>Adrian Predica</p>
+        </div>
+        <div class="user-actions">
+            <div class="greeting">
+                <img class="avatar" src="avatars/v826-te-16.png" alt="Adrian Predica" height="auto" width="48px">
+                <div>
+                    <p>Hi there,</p>
+                    <h2>Predica Adrian (@Adrian)</h2>
+                </div>
+            </div>
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
+        </div>
+    </header>
     <nav>
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.html" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Z"/></svg>
             <h1>Dashboard</h1>
         </a>
         <ul class="main-nav">
             <li>
-                <a href="#">
+                <a href="#" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M192-144v-456l288-216 288 216v456H552v-264H408v264H192Z"/></svg>
                     <p>Home</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M528-432h216v-72H528v72Zm0-120h216v-72H528v72ZM192-336h288v-45q0-29-44-52t-100.5-23q-56.5 0-100 22.5T192-381v45Zm195-165.21q21-21.21 21-51T386.79-603q-21.21-21-51-21T285-602.79q-21 21.21-21 51T285.21-501q21.21 21 51 21T387-501.21ZM168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h624q29.7 0 50.85 21.16Q864-725.68 864-695.96v432.24Q864-234 842.85-213T792-192H168Zm0-72h624v-432H168v432Zm0 0v-432 432Z"/></svg>
                     <p>Profile</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M168-240q-29.7 0-50.85-21.15Q96-282.3 96-312v-480q0-29.7 21.15-50.85Q138.3-864 168-864h624q29.7 0 50.85 21.15Q864-821.7 864-792v696L720-240H168Z"/></svg>
                     <p>Messages</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Z"/></svg>
                     <p>History</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="m439-240 221-221-54-54-167 167-81-82-55 54 136 136ZM263.72-96Q234-96 213-117.15T192-168v-624q0-29.7 21.15-50.85Q234.3-864 264-864h312l192 192v504q0 29.7-21.16 50.85Q725.68-96 695.96-96H263.72ZM528-624h168L528-792v168Z"/></svg>
                     <p>Tasks</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M48-264v-57q0-39 39-63t105-24q14 0 26 1t23 3q-12 18-18.5 39.11Q216-343.77 216-322v58H48Zm216 0v-58q0-28 14.5-50t43.5-39q29-17 69-25t89.5-8q49.5 0 89 8t68.5 25q29 16 43.5 38.69Q696-349.62 696-322v58H264Zm480 0v-58q0-22-6.5-42.5T719-404q9-2 20.5-3t28.5-1q66 0 105 24t39 63v57H744ZM192-456q-30 0-51-21t-21-51q0-30 21-51t51-21q30 0 51 21t21 51q0 30-21 51t-51 21Zm576 0q-30 0-51-21t-21-51q0-30 21-51t51-21q30 0 51 21t21 51q0 30-21 51t-51 21Zm-288-36q-45 0-76.5-31.52T372-600.07q0-44.93 31.52-76.43 31.52-31.5 76.55-31.5 44.93 0 76.43 31.55Q588-644.9 588-600q0 45-31.55 76.5T480-492Z"/></svg>
                     <p>Communities</p>
                 </a>
@@ -54,19 +76,19 @@
         </ul>
         <ul class="settings">
             <li>
-                <a href="#">
+                <a href="#" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" fill="#FFFFFF"><path d="m403-96-22-114q-23-9-44.5-21T296-259l-110 37-77-133 87-76q-2-12-3-24t-1-25q0-13 1-25t3-24l-87-76 77-133 110 37q19-16 40.5-28t44.5-21l22-114h154l22 114q23 9 44.5 21t40.5 28l110-37 77 133-87 76q2 12 3 24t1 25q0 13-1 25t-3 24l87 76-77 133-110-37q-19 16-40.5 28T579-210L557-96H403Zm77-240q60 0 102-42t42-102q0-60-42-102t-102-42q-60 0-102 42t-42 102q0 60 42 102t102 42Z"/></svg>
                     <p>Settings</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M512-277.5q13-13.5 13-32.5t-13-31.5Q499-354 480-354t-32.5 12.5Q434-329 434-310t13.5 32.5Q461-264 480-264t32-13.5ZM447-401h66q0-35 6-48.5t31-36.5q22-21 37.5-43.5T603-584q0-52-36-82t-87-30q-48 0-80 27t-44 63l59 25q6-18 21-36t44-18q31 0 45 16t14 36q0 21-15 38t-32 34q-31 30-38 48.5t-7 61.5ZM216-144q-30 0-51-21t-21-51v-528q0-30 21-51t51-21h528q30 0 51 21t21 51v528q0 30-21 51t-51 21H216Z"/></svg>
                     <p>Support</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M444-288h72v-240h-72v240Zm61.5-322.29q10.5-10.29 10.5-25.5t-10.29-25.71q-10.29-10.5-25.5-10.5t-25.71 10.29q-10.5 10.29-10.5 25.5t10.29 25.71q10.29 10.5 25.5 10.5t25.71-10.29ZM480-96q-135-33-223.5-152.84Q168-368.69 168-515v-229l312-120 312 120v229q0 146.31-88.5 266.16Q615-129 480-96Z"/></svg>
                     <p>Privacy</p>
                 </a>
