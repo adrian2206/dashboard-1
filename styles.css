@@ -171,3 +171,41 @@ header {
     display: block;
     align-self: center;
 }
+
+.main-nav,
+.settings {
+    padding: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.main-nav a,
+.settings a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    transition: transform var(--transition-fast);
+}
+
+.main-nav a:focus,
+.main-nav a:hover,
+.settings a:focus,
+.settings a:hover {
+    transform: scale(0.95);
+}
+
+.main-nav p,
+.settings p {
+    font-size: var(--step-0);
+    color: var(--bg-card);
+    line-height: 1;;
+    font-weight: bold;
+    transform: translateY(1px);
+}
+
+.main-nav svg,
+.settings svg {
+    height: var(--step-1);
+    width: var(--step-1);
+}
