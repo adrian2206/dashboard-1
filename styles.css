@@ -144,6 +144,42 @@ a {
     display: block;
 }
 
+.btn {
+    background-color: var(--primary-blue);
+    color: var(--bg-card);
+    font-size: var(--step-0);
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 600;
+    justify-content: center;
+    line-height: var(--lh-tight);
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding-right: var(--space-md);
+    padding-left: var(--space-md);
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+    transition: transform var(--transition-fast);
+    border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(0.95);
+    background-color: var(--hover-blue);
+}
+
+.btn:active {
+    transform: scale(0.90);
+    background-color: var(--hover-blue);
+}
+
 .grid-container {
     display: grid;
     height: 100dvh;
@@ -156,10 +192,6 @@ nav {
     background-color: var(--primary-blue);
     grid-row: 1 / 3;
     min-width: 0;
-}
-
-.main-content {
-    background-color: var(--bg-main);
 }
 
 .logo h1 {
@@ -237,7 +269,8 @@ header {
     background-color: var(--bg-card);
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding: var(--space-sm) var(--space-lg) var(--space-sm) var(--space-lg);
+    padding: var(--space-sm) var(--space-xl) var(--space-sm) var(--space-xl);
+    overflow: hidden;
 }
 
 .user-controls {
@@ -299,4 +332,19 @@ header {
 .greeting p {
     font-size: var(--step-minus-1);
     font-weight: bold;
+}
+
+.main-content {
+    background-color: var(--bg-main);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    border: 1px solid black;
+}
+
+.announcement {
+    border: 1px solid black;
+
 }
