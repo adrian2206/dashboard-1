@@ -337,14 +337,77 @@ header {
 .main-content {
     background-color: var(--bg-main);
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
 }
 
 .projects {
     border: 1px solid black;
 }
 
-.announcement {
+.news {
     border: 1px solid black;
+    padding: var(--space-sm);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
 
+.announcements > div {
+    background-color: var(--bg-card);
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    width: 240px;
+}
+
+.announcements h3,
+.news h3 {
+    font-size: var(--step-0);
+}
+
+.announcements h4,
+.news h4 {
+    font-size: var(--step-minus-1);
+}
+
+.announcements p {
+    font-size: var(--step-minus-2);
+    color: var(--text-muted);
+}
+
+.announcements > div > div {
+    border-bottom: 1px solid lightgray;
+    padding: var(--space-xs) 0px var(--space-xs) 0px;
+}
+
+.announcements > div > div:last-child {
+    border: none;
+}
+
+.members {
+    margin-top: var(--space-md);
+}
+
+.members > div {
+    background-color: var(--bg-card);
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    width: 240px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.members > div > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: var(--space-xs) 0px var(--space-xs) 0px;
+}
+
+.members div p:first-child {
+    font-size: var(--step-minus-1);
+    font-weight: bold;
+}
+
+.members div p:last-child {
+    font-size: var(--step-minus-1);
+    color: var(--text-muted);
 }
